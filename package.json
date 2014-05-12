@@ -1,11 +1,12 @@
 {
-  "name": "FileExplorer",
-  "description": "Simple file explorer.",
-  "version": "0.1",
+  "name": "treefm",
+  "description": "Tree File Manager",
+  "version": "0.0.1",
   "main": "index.html",
   "window": {
-    "toolbar": true,
-    "width": 660,
-    "height": 500
+    "toolbar": false
+  },
+  "dependencies": {
+    "jquery": "^2.1.1"
   }
 }

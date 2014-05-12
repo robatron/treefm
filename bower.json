@@ -1,0 +1,16 @@
+{
+  "name": "treefm",
+  "version": "0.0.0",
+  "homepage": "https://github.com/robatron/treefm",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.2.3",
+    "less": "~1.7.0"
+  }
+}
