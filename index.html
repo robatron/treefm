@@ -12,34 +12,38 @@
 
 <div class='main-container'>
 
+    <!--
+        Root Nav
+        ========
+        Controls for Root Body.
+    -->
     <nav class="main-nav">
 
-        <ul class="nav nav-list">
-            <li class="nav-header">Favorites</li>
-            <li class="active"><a href="#"><i class="icon-white icon-home"></i> Home</a></li>
-            <li><a href="#"><i class="icon-book"></i> Documents</a></li>
-            <li><a href="#"><i class="icon-picture"></i> Pictures</a></li>
-            <li class="nav-header">Network</li>
-            <li class="divider"></li>
-            <li><a href="#"><i class="icon-flag"></i> About</a></li>
+        <div class="btn-group file-contents-controls">
+            <button class="btn btn-default">Back</button>
+            <button class="btn btn-default">Forward</button>
+        </div>
+
+        <ul class="present-working-directory">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="">Documents</a>
+            </li>
         </ul>
 
     </nav>
 
+
+    <!--
+        Root Body
+        =========
+        This is where the meat of the content will show up.
+    -->
     <main class="main-body">
 
-        <nav>
-            <ul class="breadcrumb">
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="">Documents</a>
-                </li>
-            </ul>
-        </nav>
-
-        <section class="file-content">
+        <section class="file-contents">
             
             <ul>
                 <li>File 1.txt</li>
@@ -49,7 +53,22 @@
 
         </section>
 
+        <aside class="file-shortcuts">
+
+            <ul class="nav nav-list">
+                <li class="nav-header">Favorites</li>
+                <li class="active"><a href="#"><i class="icon-white icon-home"></i> Home</a></li>
+                <li><a href="#"><i class="icon-book"></i> Documents</a></li>
+                <li><a href="#"><i class="icon-picture"></i> Pictures</a></li>
+                <li class="nav-header">Network</li>
+                <li class="divider"></li>
+                <li><a href="#"><i class="icon-flag"></i> About</a></li>
+            </ul>
+
+        </aside>
+
     </main>
+
 
 </div>
 
