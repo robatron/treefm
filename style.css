@@ -1,3 +1,6 @@
+/**
+  Resets for WebKit Browsers
+**/
 * {
   -webkit-user-select: none;
 }
@@ -6,6 +9,40 @@ body {
   background-image: url('images/htmlbg.png')
 }
 
+/**
+  Main Page Layouts
+  =================
+  The code below is meant to to style the main containers
+  for our application.
+**/
+.main-container {
+  min-height: 800px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row;
+}
+
+.main-nav {
+  background-color: green;
+  display: flex;
+  flex: 1 6 10%;
+  order: 1;
+}
+
+.main-body{
+  background-color: orange;
+  display: flex;
+  flex: 3 1 60%;
+  order: 2;
+}
+
+
+/**
+  File List Module
+  ================
+  The code below is meant to style content and elements that represent files.
+**/
 .files {
   padding: 0;
   margin: 0;
