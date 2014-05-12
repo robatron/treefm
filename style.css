@@ -5,6 +5,12 @@
   -webkit-user-select: none;
 }
 
+/* Swapping box moxel for border box,
+    http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
   background-image: url('images/htmlbg.png')
 }
@@ -24,17 +30,77 @@ body {
 }
 
 .main-nav {
-  background-color: green;
-  display: flex;
+  /*background-color: green;*/
+  padding: 10px;
   flex: 1 6 10%;
   order: 1;
 }
 
 .main-body{
-  background-color: orange;
-  display: flex;
+  /*background-color: orange;*/
+  padding: 10px;
   flex: 3 1 60%;
   order: 2;
+}
+
+
+/**
+  File Content Component
+  ======================
+**/
+.file-content {
+  padding: 15px;
+  background-color: #f5f5f5;
+}
+
+
+/**
+  Nav Component
+  =============
+  These styles are building on top of Twitter Bootstrap's (TBS)
+    - `.nav`
+    - `.nav-list`
+    - '.nav-header'
+    - '.nav-list .active'
+  
+  `.nav` - TBS's modifer for `ul`
+
+  '.nav-list' - TBS's component for
+**/
+
+.nav {
+  margin-left: 0;
+  list-style: none;
+}
+
+.nav-list {
+  background-color: #f5f5f5;
+  padding: 15px;
+  margin-bottom: 0px;
+}
+
+  /* List Items */
+  .nav-list > li > a {
+    padding: 3px 15px;
+    margin: 0px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  }
+  .nav-list > .active > a {
+    color: #ffffff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+    background-color: #0088cc;
+  }
+
+.nav-list .nav-header {
+  display: block;
+  padding: 3px 15px;
+  margin: 0px;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 18px;
+  color: #999999;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
 }
 
 
