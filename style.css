@@ -30,7 +30,7 @@ body {
   Main Nav Component
   ==================
 **/
-.main-nav {
+.app-nav {
   /*background-color: green;*/
   display: flex;
   padding: 10px 10px 0px;
@@ -64,7 +64,7 @@ body {
   order: 2;
 }
 
-.file-shortcuts {
+.file-location-shortcuts {
   flex: 1 6 10%;
   order: 1;
 }
@@ -105,7 +105,7 @@ body {
   File Shortcuts Component
   ========================
 **/
-.file-shortcuts {
+.file-location-shortcuts {
   padding: 10px;
 }
 
