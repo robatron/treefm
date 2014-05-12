@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet/less" type="text/css" href="less/main.less" />
+        <!-- 1. Load platform.js for polyfill support. -->
+        <script src="bower_components/platform/platform.js"></script>
+
+        <link rel="stylesheet" href="css/main.css" />
+
+        <link rel="import" href="elements/shortcut-bar.html"/>
+        <link rel="import" href="elements/browser-pane.html"/>
     </head>
     <body>
-        <div class="sidebar">
-        </div>
-        <div class="browser-layout">
+        <div class="container">
+            <shortcut-bar class="left-sidebar"></shortcut-bar>
+            <div class="container browser-base">
+                <browser-pane></browser-pane>
+                <browser-pane></browser-pane>
+            </div>
         </div>
 
         <!-- Scripts -->
-        <script src="bower_components/less/dist/less-1.7.0.min.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>

@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+}
+
+.left-sidebar {
+    width: 200px;
+}
+
+.browser-base, .browser-base > * {
+    flex-grow: 1;
+}
+
